@@ -8,14 +8,16 @@ void sender(void *params)
 {
     while(true)
     {
-
+        xtaskNotifyGive(recieverHandler);
+        vTaskDelay(5000/portTICK_PERIOD_MS);
     }
 }
-void sender(void *params)
+void reciever(void *params)
 {
     while(true)
     {
-        
+        int count=ulTaskNotifyTake(pdFALSE,portMAX_DELAY);
+        printf("Recieved Notification %d times /n",count);
     }
 }
 void app_main(void)

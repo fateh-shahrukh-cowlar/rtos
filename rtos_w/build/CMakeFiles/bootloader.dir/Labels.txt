@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+C:/cowlar/esp32_led_scheduling/rtos_blinking/rtos/rtos_w/build/CMakeFiles/bootloader
+C:/cowlar/esp32_led_scheduling/rtos_blinking/rtos/rtos_w/build/CMakeFiles/bootloader.rule
+C:/cowlar/esp32_led_scheduling/rtos_blinking/rtos/rtos_w/build/CMakeFiles/bootloader-complete.rule
+C:/cowlar/esp32_led_scheduling/rtos_blinking/rtos/rtos_w/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+C:/cowlar/esp32_led_scheduling/rtos_blinking/rtos/rtos_w/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+C:/cowlar/esp32_led_scheduling/rtos_blinking/rtos/rtos_w/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+C:/cowlar/esp32_led_scheduling/rtos_blinking/rtos/rtos_w/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+C:/cowlar/esp32_led_scheduling/rtos_blinking/rtos/rtos_w/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+C:/cowlar/esp32_led_scheduling/rtos_blinking/rtos/rtos_w/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+C:/cowlar/esp32_led_scheduling/rtos_blinking/rtos/rtos_w/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule
