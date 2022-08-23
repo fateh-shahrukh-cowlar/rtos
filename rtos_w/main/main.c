@@ -8,13 +8,13 @@ void sender(void *params)
 {
     while(true)
     {
-        xTaskNotify(receievrHandler,(1<<0),eSetValueWithOverwrite); //
+        xTaskNotify(receievrHandler,(1<<0),eSetBits); //
         vTaskDelay(1000/portTICK_PERIOD_MS);
-        xTaskNotify(receievrHandler,(1<<1),eSetValueWithOverwrite);
+        xTaskNotify(receievrHandler,(1<<1),eSetBits); //
         vTaskDelay(1000/portTICK_PERIOD_MS);
-        xTaskNotify(receievrHandler,(1<<2),eSetValueWithOverwrite);
+         xTaskNotify(receievrHandler,(1<<2),eSetBits); //
         vTaskDelay(1000/portTICK_PERIOD_MS);
-        xTaskNotify(receievrHandler,(1<<3),eSetValueWithOverwrite);
+         xTaskNotify(receievrHandler,(1<<3),eSetBits); //
         vTaskDelay(1000/portTICK_PERIOD_MS);
     }
 }
