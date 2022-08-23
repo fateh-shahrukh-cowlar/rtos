@@ -8,16 +8,23 @@ void sender(void *params)
 {
     while(true)
     {
-        xTaskNotifyGive(receievrHandler);
-        vTaskDelay(5000/portTICK_PERIOD_MS);
+        xTaskNotify(receievrHandler,(1<<0),eSetValueWithOverwrite); //
+        vTaskDelay(1000/portTICK_PERIOD_MS);
+        xTaskNotify(receievrHandler,(1<<1),eSetValueWithOverwrite);
+        vTaskDelay(1000/portTICK_PERIOD_MS);
+        xTaskNotify(receievrHandler,(1<<2),eSetValueWithOverwrite);
+        vTaskDelay(1000/portTICK_PERIOD_MS);
+        xTaskNotify(receievrHandler,(1<<3),eSetValueWithOverwrite);
+        vTaskDelay(1000/portTICK_PERIOD_MS);
     }
 }
 void receiver(void *params)
 {
+    uint state;
     while(true)
     {
-        int count=ulTaskNotifyTake(pdFALSE,portMAX_DELAY);
-        printf("Recieved Notification %d times \n",count);
+        xTaskNotifyWait(0,0,&state,portMAX_DELAY);
+        printf("Recieved Notification %d times \n",state);
     }
 }
 void app_main(void)
